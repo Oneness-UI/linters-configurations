@@ -1,0 +1,9 @@
+node_modules/
+.vscode/
+.idea/
+.husky/_
+
+# Logs
+*.log
+
+pnpm-lock.yaml
