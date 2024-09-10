@@ -3,19 +3,19 @@ module.exports = {
     tabWidth: 4,
     printWidth: 100,
     singleQuote: true,
-    trailingComma: "all",
+    trailingComma: 'all',
     overrides: [
         {
-            files: ["*.js", "*.jsx", "*.ts", "*.tsx"],
+            files: ['*.js', '*.jsx', '*.ts', '*.tsx'],
             options: {
-                parser: "typescript",
+                parser: 'typescript',
             },
         },
-        /*{
+        {
             files: ['*.md', '*.json', '*.yaml', '*.yml'],
             options: {
-                tabWidth: 2,
+                tabWidth: 4,
             },
-        },*/
+        },
     ],
 };
