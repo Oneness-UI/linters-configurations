@@ -1,0 +1,27 @@
+{
+    "name": "@oneness-ui/prettier-config",
+    "version": "1.0.12",
+    "description": "Prettier configuration for Oneness UI projects",
+    "keywords": [
+        "prettier",
+        "config",
+        "config-prettier"
+    ],
+    "author": "Vasiliy Kochurko <kochurko.dev@outlook.com>",
+    "homepage": "https://github.com/Oneness-UI/linters-configurations#readme",
+    "license": "MIT",
+    "files": ["index.js"],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Oneness-UI/linters-configurations.git"
+    },
+    "publishConfig":  {
+        "access": "public"
+    },
+    "peerDependencies": {
+        "prettier": "*"
+    },
+    "bugs": {
+        "url": "https://github.com/Oneness-UI/linters-configurations/issues"
+    }
+}
