@@ -13,5 +13,5 @@ npm install --save-dev prettier @oneness-ui/prettier-config
 Add the following to your `.prettierrc.js`:
 
 ```js
-module.exports = require("@oneness-ui/prettier-config");
+module.exports = require('@oneness-ui/prettier-config');
 ```

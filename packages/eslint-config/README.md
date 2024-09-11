@@ -1,4 +1,5 @@
 # @oneness-ui/eslint-config
+
 ## Description
 
 ESLint config for our projects.
@@ -8,7 +9,9 @@ ESLint config for our projects.
 ```bash
 npm install --save-dev eslint @oneness-ui/eslint-config
 ```
+
 or
+
 ```bash
 pnpm add -D eslint @oneness-ui/eslint-config
 ```
@@ -19,7 +22,7 @@ Add the following to your `.eslintrc.cjs`:
 
 ```cjs
 module.exports = {
-    extends: ["@oneness-ui/eslint-config"],
+    extends: ['@oneness-ui/eslint-config'],
     root: true,
 };
 ```
@@ -30,7 +33,7 @@ Add the following to your `.eslintrc.cjs`:
 
 ```cjs
 module.exports = {
-    extends: ["@oneness-ui/eslint-config/configs/client"],
+    extends: ['@oneness-ui/eslint-config/configs/client'],
 };
 ```
 
@@ -38,7 +41,7 @@ or for server:
 
 ```cjs
 module.exports = {
-    extends: ["@oneness-ui/eslint-config/configs/server"],
+    extends: ['@oneness-ui/eslint-config/configs/server'],
 };
 ```
 
@@ -48,7 +51,7 @@ If you're utilizing Prettier, change the root configuration to extend the `prett
 
 ```cjs
 module.exports = {
-    extends: ["@oneness-ui/eslint-config", "@oneness-ui/eslint-config/configs/prettier"],
+    extends: ['@oneness-ui/eslint-config', '@oneness-ui/eslint-config/configs/prettier'],
     root: true,
 };
 ```
@@ -59,7 +62,7 @@ If you want to enforce a convention in module import order, extend root config w
 
 ```cjs
 module.exports = {
-    extends: ["@oneness-ui/eslint-config", "@oneness-ui/eslint-config/configs/import"],
+    extends: ['@oneness-ui/eslint-config', '@oneness-ui/eslint-config/configs/import'],
     root: true,
 };
 ```
@@ -70,7 +73,7 @@ If you want to spot accessibility issues, extend root config with the additional
 
 ```cjs
 module.exports = {
-    extends: ["@oneness-ui/eslint-config", "@oneness-ui/eslint-config/configs/a11y"],
+    extends: ['@oneness-ui/eslint-config', '@oneness-ui/eslint-config/configs/a11y'],
     root: true,
 };
 ```

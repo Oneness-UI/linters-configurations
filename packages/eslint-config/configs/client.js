@@ -1,9 +1,9 @@
 module.exports = {
-  extends: ["./react"],
-  parserOptions: {
-    sourceType: "module",
-  },
-  env: {
-    browser: true,
-  },
+    extends: ['./react'],
+    parserOptions: {
+        sourceType: 'module',
+    },
+    env: {
+        browser: true,
+    },
 };
