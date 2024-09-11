@@ -1,0 +1,3 @@
+{
+    "extends": ["@oneness-ui/stylelint-config", "@oneness-ui/stylelint-config/order"]
+}
