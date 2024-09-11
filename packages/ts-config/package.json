@@ -1,0 +1,25 @@
+{
+    "name": "@oneness-ui/ts-config",
+    "version": "0.6.31",
+    "description": "Oneness UI typescript configuration",
+    "author": "Vasiliy Kochurko <kochurko.dev@outlook.com>",
+    "homepage": "https://github.com/Oneness-UI/linters-configurations#readme",
+    "license": "MIT",
+    "keywords": [
+        "typescript",
+        "config"
+    ],
+    "files": [
+        "tsconfig.json"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Oneness-UI/linters-configurations.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Oneness-UI/linters-configurations/issues"
+    }
+}

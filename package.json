@@ -1,34 +1,49 @@
 {
-  "name": "oneness-linters",
-  "version": "1.0.0",
-  "description": "",
-  "workspaces": [
-    "./packages/*"
-  ],
-  "main": "index.js",
-  "scripts": {
-    "prepare": "husky",
-    "lint:js": "eslint --ext .js,.jsx,.ts,.tsx . --fix",
-    "lint:styles": "stylelint '**/*.{css,scss}'",
-    "lint:other": "npm run prettier -- --check",
-    "lint": "npm run lint:js && npm run lint:other && npm run lint:styles",
-    "prettier": "prettier '**/*.{js,md,yaml,yml,json}'"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@commitlint/cli": "^19.4.1",
-    "@commitlint/config-conventional": "^19.4.1",
-    "@oneness-ui/eslint-config": "^0.0.2",
-    "eslint": "^8.57.0",
-    "husky": "^9.1.5",
-    "lerna": "^8.1.8",
-    "nano-staged": "^0.8.0"
-  },
-  "nano-staged": {
-    "*.{js,ts}": [
-      "eslint --fix --quiet --report-unused-disable-directives"
-    ]
-  }
+    "name": "oneness-linters",
+    "version": "1.0.0",
+    "description": "",
+    "workspaces": [
+        "./packages/*"
+    ],
+    "main": "index.js",
+    "scripts": {
+        "prepare": "husky",
+        "lint:js": "eslint --ext .js,.jsx,.ts,.tsx . --fix",
+        "lint:styles": "stylelint '**/*.{css,scss}'",
+        "lint:other": "npm run prettier -- --check",
+        "lint": "npm run lint:js && npm run lint:other && npm run lint:styles"
+    },
+    "keywords": [
+        "lint",
+        "linter",
+        "stylelint",
+        "eslint",
+        "prettier"
+    ],
+    "author": "Vasiliy Kochurko <kochurko.dev@outlook.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@commitlint/cli": "^19.4.1",
+        "@commitlint/config-conventional": "^19.4.1",
+        "@oneness-ui/eslint-config": "^0.0.2",
+        "@oneness-ui/prettier-config": "^1.0.14",
+        "@oneness-ui/stylelint-config": "^1.0.93",
+        "eslint": "^8.57.0",
+        "husky": "^9.1.5",
+        "lerna": "^8.1.8",
+        "nano-staged": "^0.8.0",
+        "prettier": "^3.3.3",
+        "stylelint": "^16.6.1"
+    },
+    "nano-staged": {
+        "*.{js,ts}": [
+            "eslint --fix --quiet --report-unused-disable-directives"
+        ],
+        "*.{css,scss}": [
+            "stylelint --fix --quiet --report-needless-disables"
+        ],
+        "*.{js,md,yaml,yml,json}": [
+            "prettier --write"
+        ]
+    }
 }
